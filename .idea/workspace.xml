@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/calculator/image/bj.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGIt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/bkground.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/bkground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/tupian/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/bkground.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/bkground.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_sum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/产品文档/宏定义及框架.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/产品文档/用户流程图.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2ig8Ky5odxZW3gKgjgl1SlBZ6ki" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "应用程序.Main.executor": "Run"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\lab_school\lab_Calculator\calculator\image" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="lab_Calculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="" />
+      <created>1719900801282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719900801282</updated>
+    </task>
+    <servers />
+  </component>
+</project>

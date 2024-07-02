@@ -12,22 +12,27 @@ public class bkground {
 
     public void show(){
         JFrame frame=new JFrame();
-//        frame.setLayout(new FlowLayout());
-        frame.setBounds(0,0,900,930);
+//     frame.setLayout(new FlowLayout());
+        frame.setBounds(50,50,980,1010);
 
-        ImageIcon image=new ImageIcon("D:/jsq/11.jpg");
+        ImageIcon image=new ImageIcon("D:\\lab_school\\lab_Calculator\\calculator\\image\\bj.jpg");
         JLabel label=new JLabel(image);
-        label.setBounds(0,0,900,900);
+        label.setBounds(-8,-15,980,1010);
         frame.getLayeredPane().add(label,new Integer(Integer.MIN_VALUE));
 
         JPanel pan=(JPanel)frame.getContentPane();
         pan.setOpaque(false);
-        pan.setLayout(null);
+        pan.setLayout(new FlowLayout());
 
-        btm logon=new btm("按钮");
-        logon.setBounds(63,300,110,72);
+        btm logon=new btm();
+
+        JButton jb[]=logon.MakeButton();
+        for(int i=0;i<jb.length;i++)
+        {
+            pan.add(jb[i]);
+        }
         //  logon.setBounds(83,300,110,72);
-        pan.add(logon);
+
 
         frame.setVisible(true);
         frame.setResizable(false);
