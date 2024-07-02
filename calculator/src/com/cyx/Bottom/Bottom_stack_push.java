@@ -2,14 +2,10 @@ package com.cyx.Bottom;
 
 import java.util.Stack;
 
-public class Bottom_stack_push extends btm{
+public class Bottom_stack_push {
   //  private Integer[][] BtmK =new Integer[1000][1000];
     private String BtmStr;
     public Stack<String> BtmStk = new Stack<>();
-
-    public Bottom_stack_push(String title) {
-        super(title);
-    }
 
     public String getBtmStr() {
         return BtmStr;
@@ -24,6 +20,12 @@ public class Bottom_stack_push extends btm{
             BtmStr = BtmStr + BtmStrPush;
         }
         BtmStk.push(BtmStrPush);
+    }
+
+
+    public String PsplPlP(String a) {
+       String k=getBtmStrPush();
+
     }
 
 
@@ -57,7 +59,6 @@ public class Bottom_stack_push extends btm{
                 }
             }
         }
-
         return maxLen;
 }
 
