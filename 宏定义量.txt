@@ -10,4 +10,4 @@
 BottomWidth,BottomLength
 
 栈:BtmStk
-字符串:BtmStr;
+传入字符串:BtmStrPush 字符串最后:BtmStr;
