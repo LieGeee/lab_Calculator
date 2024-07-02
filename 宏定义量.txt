@@ -10,6 +10,6 @@
 BottomWidth,BottomLength
 
 栈:BtmStk
-传入字符串:BtmStrPush 字符串最后:BtmStr;
+传入字符串:BtmStrPush 字符串最后:BtmStr; 数组检测Btmk
 括号数组 BtmK
 检测括号 CkBks
