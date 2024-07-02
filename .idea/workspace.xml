@@ -3,19 +3,24 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_stack_push.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_stack_push.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,12 +43,18 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.Main.executor&quot;: &quot;Run&quot;,
     &quot;应用程序.TestSysOut.executor&quot;: &quot;Run&quot;
   }
@@ -68,12 +79,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.Main" />
-        <item itemvalue="应用程序.TestSysOut" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,7 +88,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719900801282</updated>
+      <workItem from="1719923166371" duration="5000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
