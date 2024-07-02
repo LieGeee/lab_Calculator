@@ -12,7 +12,7 @@ public class bkground {
 
     public void show(){
         JFrame frame=new JFrame();
-//     frame.setLayout(new FlowLayout());
+     frame.setLayout(null);
         frame.setBounds(50,50,980,1010);
 
         ImageIcon image=new ImageIcon("D:\\lab_school\\lab_Calculator\\calculator\\image\\bj.jpg");
@@ -22,11 +22,13 @@ public class bkground {
 
         JPanel pan=(JPanel)frame.getContentPane();
         pan.setOpaque(false);
-        pan.setLayout(new FlowLayout());
+        pan.setLayout(null);
 
         btm logon=new btm();
 
         JButton jb[]=logon.MakeButton();
+        //jb[2].setBounds(61,328,120,80);
+       // pan.add(jb[2]);
         for(int i=0;i<jb.length;i++)
         {
             pan.add(jb[i]);
