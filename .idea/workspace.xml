@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/fuc.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/fuc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_sum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/fuc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/宏定义量.txt" beforeDir="false" afterPath="$PROJECT_DIR$/宏定义量.txt" afterDir="false" />
-    </list>
+    <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,24 +29,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "应用程序.Main.executor": "Run",
-    "应用程序.TestSysOut.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;应用程序.Main.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.TestSysOut.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\lab_school\lab_Calculator\calculator\image" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestSysOut">
+  <component name="RunManager" selected="应用程序.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="lab_Calculator" />
@@ -71,8 +63,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.TestSysOut" />
         <item itemvalue="应用程序.Main" />
+        <item itemvalue="应用程序.TestSysOut" />
       </list>
     </recent_temporary>
   </component>

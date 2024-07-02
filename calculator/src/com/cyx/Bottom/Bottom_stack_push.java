@@ -23,10 +23,10 @@ public class Bottom_stack_push {
     }
 
 
-    public String PsplPlP(String a) {
-       String k=getBtmStrPush();
-
-    }
+//    public String PsplPlP(String a) {
+//       String k=getBtmStrPush();
+//
+//    }
 
 
     public int CkBks(String s) {
