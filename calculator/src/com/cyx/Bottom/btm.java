@@ -1,8 +1,9 @@
+package com.cyx.Bottom;
 
 import javax.swing.*;
 
 public class btm extends JButton {
-    btm(String title) {
+   public btm(String title) {
         super(title);
     }
 
