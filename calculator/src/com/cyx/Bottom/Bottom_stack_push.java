@@ -32,6 +32,12 @@ public class Bottom_stack_push {
 //       String k=getBtmStrPush();
 //
 //    }
+    public void Calculate(String s)
+    {
+        Stack<String> st = new Stack< >();
+
+
+    }
 
 
     public int CkBks(String s) {

@@ -15,7 +15,7 @@ public class bkground {
      frame.setLayout(null);
         frame.setBounds(50,50,980,1010);
 
-        ImageIcon image=new ImageIcon("D:\\lab_school\\lab_Calculator\\calculator\\image\\bj.jpg");
+        ImageIcon image=new ImageIcon("D:\\lab_school\\lab_Calculator\\calculator\\image\\BJ.jpg");
         JLabel label=new JLabel(image);
         label.setBounds(-8,-15,980,1010);
         frame.getLayeredPane().add(label,new Integer(Integer.MIN_VALUE));
