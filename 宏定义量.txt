@@ -1,0 +1,13 @@
+数字偏移量
+框,初始点BottomFirx,BottomFiry
+
+(三角函数3)
+
+按钮偏移量BottomMovex,BottomMovey
+
+按钮
+(lenggtn)
+BottomWidth,BottomLength
+
+栈:BtmStk
+字符串:BtmStr;
