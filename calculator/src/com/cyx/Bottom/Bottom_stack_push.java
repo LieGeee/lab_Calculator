@@ -7,9 +7,9 @@ public class Bottom_stack_push extends btm{
     private String BtmStr;
     public Stack<String> BtmStk = new Stack<>();
 
-    public Bottom_stack_push(String title) {
-        super(title);
-    }
+//    public Bottom_stack_push(String title) {
+//        super(title);
+//    }
 
     public String getBtmStr() {
         return BtmStr;

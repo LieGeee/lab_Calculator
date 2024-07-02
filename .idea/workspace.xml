@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/calculator/image/bj.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestGIt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculator/src/bkground.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/bkground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/tupian/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/untitled.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/bkground.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/bkground.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_sum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_sum.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/产品文档/宏定义及框架.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/产品文档/用户流程图.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
