@@ -1,24 +1,29 @@
 package com.cyx.Bottom;
 
+import com.cyx.Bottom.btm;
 import java.util.Stack;
 
 public class Bottom_stack_push {
   //  private Integer[][] BtmK =new Integer[1000][1000];
-    private String BtmStr;
+    public static String BtmStr = "";
     public Stack<String> BtmStk = new Stack<>();
 
+/*
     public String getBtmStr() {
         return BtmStr;
     }
-    
-    public void setBtmStr(String BtmStr) {
+*/
+
+  /*  public void setBtmStr(String BtmStr) {
         this.BtmStr = BtmStr;
-    }
-    public void pushStr(String BtmStrPush) {
-        String btmStr = getBtmStr();
+    }*/
+    public void pushStr(String BtmStrPush,btm a) {
+        BtmStrPush=a.getBtmStrPush();
         if(BtmStrPush.equals("(")||BtmStrPush.equals(")")){
-            BtmStr = BtmStr + BtmStrPush;
+
+
         }
+        BtmStr = BtmStr + BtmStrPush;
         BtmStk.push(BtmStrPush);
     }
 

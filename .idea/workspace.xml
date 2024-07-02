@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="" />
+    <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_stack_push.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_stack_push.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
