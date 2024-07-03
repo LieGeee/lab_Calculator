@@ -10,18 +10,18 @@ public class PsplPlP {
     private static final int PLocX=121;          //开始的x坐标
     private static final int PLocY=121;         //开始的y坐标
 
-    public static int getPLocX() {
-        return PLocX;
-    }
-    public static int getPLocY() {
-        return PLocY;
-    }
-    public static int getPspSz() {
-        return PspSz;
-    }
-    public static int getPspLs() {
-        return PspLs;
-    }
+//
+//
+//
+//    public String PspCac(int PLocX,int PLocY,int PspSz,int PspLs){
+//        PLocX =this.PLocX;
+//        PLocY =this.PLocX;
+//        PspSz =this.PLocX;
+//        PspLs =this.PLocX;
+//
+//
+//    };
+
 
 
 }
