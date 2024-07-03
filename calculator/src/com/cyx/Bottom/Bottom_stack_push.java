@@ -38,17 +38,21 @@ public class Bottom_stack_push {
 //    }
     public int cmp(String x)
     {
-        if(x=="+"||x=="-")return 1;
-        if(x=="*"||x=="/")return 2;
+        if(x.equals("+")||x.equals("-"))return 1;
+        if(x.equals("*")||x.equals("'/"))return 2;
         return 3;
     }
     public void Calculate(String s)
     {
-        String s2;
+        String[]s2=new String[1000];int j=0;
         Stack<String> st = new Stack<String>();
         for(int i=0;i<s.length();i++)
         {
-           // if(i!=s.length()-1);
+          if(s.charAt(i)=='+'||s.charAt(i)=='-'||s.charAt(i)=='*'||s.charAt(i)=='/')
+          {
+              j+=1;
+          }
+          s2[0]+=s.charAt(i);
         }
 
     }
