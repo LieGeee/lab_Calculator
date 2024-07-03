@@ -17,3 +17,4 @@ BottomWidth,BottomLength
 显示:PsplPlP(
     数字大小:PspSz
     显示长度(队列长度):PspLs
+    显示的队列名字:PspQue

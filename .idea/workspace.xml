@@ -10,9 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/PsplPlP.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/PsplPlP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/宏定义量.txt" beforeDir="false" afterPath="$PROJECT_DIR$/宏定义量.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" beforeDir="false" afterPath="$PROJECT_DIR$/新建文件夹/lab_Calculator/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/calculator/src/com/cyx/Bottom/PsplPlP.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +56,12 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "S:/",
+    "last_opened_file_path": "S:/lab_school",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true",
     "应用程序.Main.executor": "Run",
     "应用程序.TestSysOut.executor": "Run"
@@ -102,6 +106,7 @@
       <updated>1719900801282</updated>
       <workItem from="1719923166371" duration="5000" />
       <workItem from="1719980715208" duration="306000" />
+      <workItem from="1719981042278" duration="1416000" />
     </task>
     <servers />
   </component>
