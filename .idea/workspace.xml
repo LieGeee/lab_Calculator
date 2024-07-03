@@ -11,8 +11,13 @@
   <component name="ChangeListManager">
     <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/bkground.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/bkground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/PsplPlP.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/PsplPlP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/宏定义量.txt" beforeDir="false" afterPath="$PROJECT_DIR$/宏定义量.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_stack_push.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/Bottom_stack_push.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab_Calculator/com/cyx/Bottom/btm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" beforeDir="false" afterPath="$PROJECT_DIR$/新建文件夹/lab_Calculator/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" afterDir="false" />
@@ -80,6 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PsplPlP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cyx.Bottom.PsplPlP" />
+      <module name="lab_Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cyx.Bottom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSysOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestSysOut" />
       <module name="lab_Calculator" />
@@ -90,6 +108,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.Main" />
+        <item itemvalue="应用程序.PsplPlP" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +130,7 @@
       <updated>1719900801282</updated>
       <workItem from="1719923166371" duration="5000" />
       <workItem from="1719980715208" duration="306000" />
-      <workItem from="1719981042278" duration="3785000" />
+      <workItem from="1719981042278" duration="9494000" />
     </task>
     <servers />
   </component>

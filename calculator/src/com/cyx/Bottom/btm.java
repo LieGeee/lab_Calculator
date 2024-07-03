@@ -46,7 +46,9 @@ public class btm {
                     Date date=new Date();  //输出时间
 
                     btm w=new btm();
+
                     w.BtmStrPush = e.getActionCommand();
+
                     if(w.BtmStrPush.equals("时间")){
                         System.out.println(date);
 
