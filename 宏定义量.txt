@@ -3,14 +3,20 @@
 
 (三角函数3)
 
-按钮偏移量BottomMovex,BottomMovey
+按钮偏移量BottomMovexBottomMovey
 
 按钮
 (lenggtn)
 BottomWidth,BottomLength
 
 栈:BtmStk
-传入字符串:BtmStrPush 字符串最后:BtmStr; 数组检测Btmk
+
+字符串
+    传入字符串:BtmStrPush
+     字符串最后:BtmStr;
+      数组检测Btmk
+
+
 括号数组 BtmK
 检测括号 CkBks
 
@@ -18,3 +24,4 @@ BottomWidth,BottomLength
     数字大小:PspSz
     显示长度(队列长度):PspLs
     显示的队列名字:PspQue
+    计算位置:PspSz
