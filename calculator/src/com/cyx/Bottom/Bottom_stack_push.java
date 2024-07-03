@@ -38,40 +38,69 @@ public class Bottom_stack_push {
 //    }
     public int cmp(String x)
     {
+
         if(x.equals("+")||x.equals("-"))return 1;
         if(x.equals("*")||x.equals("'/"))return 2;
-        return 3;
+        if(x.equals("sin")||x.equals("cos")||x.equals("tan")||x.equals("cot")||x.equals("csc")||x.equals("sec"))return 3;
+        return 0;
     }
-    public void Calculate(String s)
+    public void extract(String s)
     {
+       // System.out.println(s);
         String[]s2=new String[1000];int j=0;
         Stack<String> st = new Stack<String>();
         for(int i=0;i<s.length();i++)
         {
+            if(s2[j]==null)s2[j]="";
           if(s.charAt(i)=='+'||s.charAt(i)=='-'||s.charAt(i)=='*'||s.charAt(i)=='/'||s.charAt(i)=='!'||s.charAt(i)=='%'||s.charAt(i)=='('||s.charAt(i)==')')
           {
+
               j+=1;
+              if(s2[j]==null)s2[j]="";
               s2[j]+=s.charAt(i);
               j+=1;
               continue;
           }else if(s.charAt(i)=='s'||s.charAt(i)=='c'||s.charAt(i)=='t')
           {
+
               j+=1;
+              if(s2[j]==null)s2[j]="";
               s2[j]+=s.charAt(i);
               s2[j]+=s.charAt(i+1);
               s2[j]+=s.charAt(i+2);
               i+=2;
               j+=1;
               continue;
-
           }
           s2[j]+=s.charAt(i);
         }
-        for(int i=0;i<j;i++)
+
+        for(int i=0;i<=j;i++)
         {
-            System.out.println(s2[i]);
+            System.out.printf(s2[i]+" ");
+        }
+        if(this.check(s2))
+        {
+
+        }else
+        {
+            System.out.printf("error");
         }
     }
+    public boolean check(String[] s1)
+    {
+        for(int i=0;i<s1.length-1;i++)
+        {
+            if(this.cmp(s1[i])==0);
+        }
+    }
+
+    public void Calculate(String[] s1)
+    {
+
+
+    }
+
 
 
     public int CkBks(String s) {

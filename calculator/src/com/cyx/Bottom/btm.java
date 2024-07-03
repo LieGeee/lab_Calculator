@@ -66,7 +66,8 @@ public class btm {
                         BtmStr = BtmStr.substring(0, BtmStr.length() - 1);
                     }else if(w.BtmStrPush.equals("=")){
                         Bottom_stack_push a=new Bottom_stack_push();
-                        a.Calculate(BtmStr);
+                        a.extract(BtmStr);
+                        BtmStr="";
                     }
                     Bottom_stack_push a=new Bottom_stack_push();
                     a.pushStr(BtmStr,w);
