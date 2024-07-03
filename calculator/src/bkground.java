@@ -23,7 +23,6 @@ public class bkground {
         JPanel pan=(JPanel)frame.getContentPane();
         pan.setOpaque(false);
         pan.setLayout(null);
-
         btm logon=new btm();
 
         JButton jb[]=logon.MakeButton();

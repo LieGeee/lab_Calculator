@@ -42,7 +42,7 @@ public class Bottom_stack_push {
     {
 
         if(x.equals("+")||x.equals("-"))return 1;
-        if(x.equals("*")||x.equals("'/"))return 2;
+        if(x.equals("*")||x.equals("/"))return 2;
         if(x.equals("sin")||x.equals("cos")||x.equals("tan")||x.equals("cot")||x.equals("csc")||x.equals("sec"))return 3;
         return 0;
     }
@@ -57,7 +57,7 @@ public class Bottom_stack_push {
           if(s.charAt(i)=='+'||s.charAt(i)=='-'||s.charAt(i)=='*'||s.charAt(i)=='/'||s.charAt(i)=='!'||s.charAt(i)=='%'||s.charAt(i)=='('||s.charAt(i)==')')
           {
 
-              j+=1;
+                if(i!=0&&s.charAt(i-1)!='+'&&s.charAt(i-1)!='-'&&s.charAt(i-1)!='*'&&s.charAt(i-1)!='/'&&s.charAt(i-1)!='!'&&s.charAt(i-1)!='%'&&s.charAt(i-1)!='('&&s.charAt(i)!=')')j+=1;
               if(s2[j]==null)s2[j]="";
               s2[j]+=s.charAt(i);
               j+=1;
@@ -76,25 +76,40 @@ public class Bottom_stack_push {
           }
           s2[j]+=s.charAt(i);
         }
-
         for(int i=0;i<=j;i++)
         {
-            System.out.printf(s2[i]+" ");
+            System.out.printf(s2[i]+'|');
         }
-        if(this.check(s2))
+        if(this.check(s2,j))
         {
-
+            System.out.println("right");
         }else
         {
-            System.out.printf("error");
+            System.out.println("error");
         }
     }
-    public boolean check(String[] s1)
+    public boolean check(String[] s1,int size)
     {
-        for(int i=0;i<s1.length-1;i++)
+        for(int i=0;i<size;i++)
         {
-            if(this.cmp(s1[i])==0);
+          //  System.out.println(size);
+            if(this.cmp(s1[i])==0)continue;
+            else if(this.cmp(s1[i])==1||this.cmp(s1[i])==2)
+            {
+                if(this.cmp(s1[i+1])==1||this.cmp(s1[i+1])==2)
+                {
+
+                    return false;
+
+                }
+            }
+            else if(this.cmp(s1[i])==3)
+            {
+                if(this.cmp(s1[i+1])==3)return false;
+            }
+
         }
+        return true;
     }
 
     public void Calculate(String[] s1)
@@ -119,15 +134,15 @@ public class Bottom_stack_push {
             if (s.charAt(i) == '(') {
                 stack.push(i);
             } else {
-                if (stack.isEmpty()) {   //如果栈为空，没有左括号可以匹配
+                if (stack.isEmpty()) {   //如果栈为空，没有左括号可以匹配                                                                                                        ;;
                     accumulatedLen = 0;
                 } else {
                     int matchedPos = stack.pop(); //从最近的'('作为起点
-                    int matchedLen = i - matchedPos + 1;	//计算两括号间的长度
+                    int matchedLen = i - matchedPos + 1;	//计算两括号间的长度                                                                                       ;;
 
                     if (stack.isEmpty()) {			//如果栈为空，没有左括号可以匹配
                         accumulatedLen += matchedLen;
-                        matchedLen = accumulatedLen;	//更新当前匹配括号序列长度
+                        matchedLen = accumulatedLen;	//更新当前匹配括号序列长度                                                                                             ;
                     } else {
                         matchedLen = i - stack.peek();
                     }
