@@ -15,3 +15,5 @@ BottomWidth,BottomLength
 检测括号 CkBks
 
 显示:PsplPlP(
+    数字大小:PspSz
+    显示长度(队列长度):PspLs
