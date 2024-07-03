@@ -11,7 +11,7 @@ public class bkground {
 
 
     public void show(){
-        JFrame frame=new JFrame();
+        btm frame=new btm();
      frame.setLayout(null);
         frame.setBounds(50,50,980,1010);
 
@@ -34,12 +34,23 @@ public class bkground {
         }
         //  logon.setBounds(83,300,110,72);
 
+        btm q = new btm();
+//        q.setTitle("Calculator");
+//        q.setSize(1000, 800);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        q.setVisible(true);
+
+//        JButton[] buttons = q.MakeButton();
+//        for (JButton button : buttons) {
+//            q.add(button); // 确保所有按钮添加到JFrame
 
         frame.setVisible(true);
         frame.setResizable(false);
         //C:\Users\58472\Desktop
 
 
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 }
