@@ -65,7 +65,7 @@ public class Bottom_stack_push {
           }else if(s.charAt(i)=='s'||s.charAt(i)=='c'||s.charAt(i)=='t')
           {
 
-              j+=1;
+              if(i!=0&&s.charAt(i-1)!='+'&&s.charAt(i-1)!='-'&&s.charAt(i-1)!='*'&&s.charAt(i-1)!='/'&&s.charAt(i-1)!='!'&&s.charAt(i-1)!='%'&&s.charAt(i-1)!='('&&s.charAt(i)!=')')j+=1;
               if(s2[j]==null)s2[j]="";
               s2[j]+=s.charAt(i);
               s2[j]+=s.charAt(i+1);
@@ -76,12 +76,15 @@ public class Bottom_stack_push {
           }
           s2[j]+=s.charAt(i);
         }
+
         for(int i=0;i<=j;i++)
         {
-            System.out.printf(s2[i]+'|');
+            System.out.printf(s2[i]+' ');
+
         }
         if(this.check(s2,j))
         {
+            this.Calculate(s2,j);
             System.out.println("right");
         }else
         {
@@ -90,6 +93,7 @@ public class Bottom_stack_push {
     }
     public boolean check(String[] s1,int size)
     {
+
         for(int i=0;i<size;i++)
         {
           //  System.out.println(size);
@@ -112,9 +116,14 @@ public class Bottom_stack_push {
         return true;
     }
 
-    public void Calculate(String[] s1)
+    public void Calculate(String[] s1,int size)
     {
+        double[]s2=new double[1000];
+        for(int i=0;i<=size;i++)
+        {
+            if(s2[i]=='Π')s2[i]=Math.PI;
 
+        }
 
     }
 
