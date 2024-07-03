@@ -48,13 +48,29 @@ public class Bottom_stack_push {
         Stack<String> st = new Stack<String>();
         for(int i=0;i<s.length();i++)
         {
-          if(s.charAt(i)=='+'||s.charAt(i)=='-'||s.charAt(i)=='*'||s.charAt(i)=='/')
+          if(s.charAt(i)=='+'||s.charAt(i)=='-'||s.charAt(i)=='*'||s.charAt(i)=='/'||s.charAt(i)=='!'||s.charAt(i)=='%'||s.charAt(i)=='('||s.charAt(i)==')')
           {
               j+=1;
-          }
-          s2[0]+=s.charAt(i);
-        }
+              s2[j]+=s.charAt(i);
+              j+=1;
+              continue;
+          }else if(s.charAt(i)=='s'||s.charAt(i)=='c'||s.charAt(i)=='t')
+          {
+              j+=1;
+              s2[j]+=s.charAt(i);
+              s2[j]+=s.charAt(i+1);
+              s2[j]+=s.charAt(i+2);
+              i+=2;
+              j+=1;
+              continue;
 
+          }
+          s2[j]+=s.charAt(i);
+        }
+        for(int i=0;i<j;i++)
+        {
+            System.out.println(s2[i]);
+        }
     }
 
 
