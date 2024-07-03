@@ -18,6 +18,7 @@ public class Bottom_stack_push {
   /*  public void setBtmStr(String BtmStr) {
         this.BtmStr = BtmStr;
     }*/
+
     public void pushStr(String BtmStrPush,btm a) {
         BtmStrPush=a.getBtmStrPush();
         if(BtmStrPush.equals("(")){
@@ -28,6 +29,7 @@ public class Bottom_stack_push {
             PosPushStr++;
         }
         BtmStr = BtmStr + BtmStrPush;
+
         BtmStk.push(BtmStrPush);
     }
 

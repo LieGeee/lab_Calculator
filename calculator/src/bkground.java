@@ -40,6 +40,7 @@ public class bkground {
         frame.setResizable(false);
         //C:\Users\58472\Desktop
 
+
     }
 
 }
