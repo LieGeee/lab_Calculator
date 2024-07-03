@@ -57,20 +57,20 @@ public class btm {
                         BtmStr="";
                         //输出日期
                     }else if(w.BtmStrPush.equals("X")){
-
                         w.BtmStrPush="*";
                         Bottom_stack_push a=new Bottom_stack_push();
                         a.pushStr(BtmStr,w);
                         System.out.println(BtmStr);
                     }else if (w.BtmStrPush.equals("÷")){
-
                         w.BtmStrPush="/";
                         Bottom_stack_push a=new Bottom_stack_push();
                         a.pushStr(BtmStr,w);
                         System.out.println(BtmStr);
                     }else if(w.BtmStrPush.equals("del")){
-
                         BtmStr = BtmStr.substring(0, BtmStr.length() - 1);
+                    }else if(w.BtmStrPush.equals("=")){
+                        Bottom_stack_push a=new Bottom_stack_push();
+                        a.Calculate(BtmStr);
                     }
 
                 }

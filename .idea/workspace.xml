@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="474bda37-e88a-442f-9f8c-3ac026261b51" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/PsplPlP.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/PsplPlP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/宏定义量.txt" beforeDir="false" afterPath="$PROJECT_DIR$/宏定义量.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/新建文件夹/lab_Calculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/新建文件夹/lab_Calculator/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" beforeDir="false" afterPath="$PROJECT_DIR$/新建文件夹/lab_Calculator/calculator/src/com/cyx/Bottom/Bottom_stack_push.java" afterDir="false" />
@@ -106,7 +105,7 @@
       <updated>1719900801282</updated>
       <workItem from="1719923166371" duration="5000" />
       <workItem from="1719980715208" duration="306000" />
-      <workItem from="1719981042278" duration="1416000" />
+      <workItem from="1719981042278" duration="2448000" />
     </task>
     <servers />
   </component>
