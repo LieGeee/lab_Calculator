@@ -36,10 +36,20 @@ public class Bottom_stack_push {
 //       String k=getBtmStrPush();
 //
 //    }
+    public int cmp(String x)
+    {
+        if(x=="+"||x=="-")return 1;
+        if(x=="*"||x=="/")return 2;
+        return 3;
+    }
     public void Calculate(String s)
     {
-        Stack<String> st = new Stack< >();
-
+        String s2;
+        Stack<String> st = new Stack<String>();
+        for(int i=0;i<s.length();i++)
+        {
+           // if(i!=s.length()-1);
+        }
 
     }
 
