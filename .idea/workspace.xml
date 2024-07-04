@@ -141,11 +141,26 @@
       <workItem from="1719923166371" duration="5000" />
       <workItem from="1719980715208" duration="306000" />
       <workItem from="1719981042278" duration="9494000" />
-      <workItem from="1720010101093" duration="4294000" />
+      <workItem from="1720010101093" duration="6185000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/calculator/src/com/cyx/Bottom/btm.java</url>
+          <line>134</line>
+          <properties class="com.cyx.Bottom.btm" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

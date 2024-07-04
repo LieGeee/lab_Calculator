@@ -140,6 +140,9 @@ public class btm extends JFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
+        ImageIcon image=new ImageIcon("S:\\lab_school\\calculator\\image\\BJ.jpg");
+        JLabel label=new JLabel(image);
+        label.setBounds(-8,-15,980,1010);
         JButton[] buttons = frame.MakeButton();
         for (JButton button : buttons) {
             frame.add(button); // 确保所有按钮添加到JFrame
