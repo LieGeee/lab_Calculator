@@ -43,22 +43,26 @@ public class Bottom_stack_push {
 
         if(x.equals("+")||x.equals("-"))return 1;
         if(x.equals("*")||x.equals("/"))return 2;
-        if(x.equals("sin")||x.equals("cos")||x.equals("tan")||x.equals("cot")||x.equals("csc")||x.equals("sec"))return 3;
+        if(x.equals("sin")||x.equals("cos")||x.equals("tan")||x.equals("cot")||x.equals("csc")||x.equals("sec")||x.equals("!"))return 3;
         return 0;
     }
     public void extract(String s)
     {
        // System.out.println(s);
-        String[]s2=new String[1000];int j=0;
-        Stack<String> st = new Stack<String>();
+        String[]s2=new String[1000];
+        int j=0;
+
         for(int i=0;i<s.length();i++)
         {
-            if(s2[j]==null)s2[j]="";
-          if(s.charAt(i)=='+'||s.charAt(i)=='-'||s.charAt(i)=='*'||s.charAt(i)=='/'||s.charAt(i)=='!'||s.charAt(i)=='%'||s.charAt(i)=='('||s.charAt(i)==')')
+            if(s2[j]==null)
+                s2[j]="";
+          if(s.charAt(i)=='+'||s.charAt(i)=='-'||s.charAt(i)=='*'||s.charAt(i)=='/'||s.charAt(i)=='!'||s.charAt(i)=='%'||s.charAt(i)==')'||s.charAt(i)=='(')
           {
 
-                if(i!=0&&s.charAt(i-1)!='+'&&s.charAt(i-1)!='-'&&s.charAt(i-1)!='*'&&s.charAt(i-1)!='/'&&s.charAt(i-1)!='!'&&s.charAt(i-1)!='%'&&s.charAt(i-1)!='('&&s.charAt(i)!=')')j+=1;
-              if(s2[j]==null)s2[j]="";
+                if(i!=0&&s.charAt(i-1)!='+'&&s.charAt(i-1)!='-'&&s.charAt(i-1)!='*'&&s.charAt(i-1)!='/'&&s.charAt(i-1)!='!'&&s.charAt(i-1)!='%'&&s.charAt(i-1)!='('&&s.charAt(i-1)!=')')
+                    j+=1;
+              if(s2[j]==null)
+                  s2[j]="";
               s2[j]+=s.charAt(i);
               j+=1;
               continue;
@@ -76,15 +80,16 @@ public class Bottom_stack_push {
           }
           s2[j]+=s.charAt(i);
         }
-
-        for(int i=0;i<=j;i++)
-        {
-            System.out.printf(s2[i]+' ');
-
-        }
+        if(s2[j]==null)j-=1;
+//        for(int i=0;i<=j;i++)
+//        {
+//            System.out.printf(s2[i]+' ');
+//
+//        }
+       // System.out.println();
         if(this.check(s2,j))
         {
-            this.Calculate(s2,j);
+            this.infix_suffix(s2,j);
             System.out.println("right");
         }else
         {
@@ -116,15 +121,85 @@ public class Bottom_stack_push {
         return true;
     }
 
-    public void Calculate(String[] s1,int size)
+    public void infix_suffix (String[] s1,int size)
     {
-        double[]s2=new double[1000];
+        int index=0;
+        String[]s2=new String[1000];
+        Stack<String> st = new Stack<String>();
+        //if(s2[i]=='Π')s2[i]=Math.PI;
+//        for(int i=0;i<=size;i++)
+//        {
+//            System.out.printf(s1[i]+" ");
+//        }
+//        System.out.println();
         for(int i=0;i<=size;i++)
         {
-            if(s2[i]=='Π')s2[i]=Math.PI;
+            if(s1[i].equals("(")) {
 
+                st.push(s1[i]);
+            }
+            else if(s1[i].equals(")"))
+            {
+                System.out.println();
+                while(!st.peek().equals("("))
+                {
+                    System.out.println();
+                    s2[index++]=st.peek();
+                    st.pop();
+                }
+                st.pop();
+            }
+            else if(this.cmp(s1[i])==0)
+            {
+                //if(s1[i].equals(")"))System.out.println();
+                s2[index++]=s1[i];
+            }
+            else if(this.cmp(s1[i])==1)
+            {
+                if(st.empty()||this.cmp(s1[i])>this.cmp(st.peek())||st.peek()=="(")
+                {
+                    st.push(s1[i]);
+                }else
+                {
+                    s2[index++]= st.pop();;
+
+                    st.push(s1[i]);
+                }
+            }
+            else if(this.cmp(s1[i])==2)
+            {
+                if(st.empty()||this.cmp(s1[i])>this.cmp(st.peek())||st.peek()=="(")
+                {
+                    st.push(s1[i]);
+                }else
+                {
+                    s2[index++]= st.pop();;
+                    st.pop();
+                    st.push(s1[i]);
+                }
+            }
+            else if(this.cmp(s1[i])==3)
+            {
+                if(st.empty()||this.cmp(s1[i])>this.cmp(st.peek())||st.peek()=="(")
+                {
+                    st.push(s1[i]);
+                }else
+                {
+                    s2[index++]= st.pop();;
+                    st.pop();
+                    st.push(s1[i]);
+                }
+            }
         }
-
+        while(!st.empty())
+        {
+            s2[index++]=st.peek();
+            st.pop();
+        }
+//        for(int i=0;i<index;i++)
+//        {
+//            System.out.printf(s2[i]+" ");
+//        }
     }
 
 
