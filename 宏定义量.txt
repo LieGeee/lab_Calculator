@@ -10,6 +10,7 @@
 BottomWidth,BottomLength
 
 栈:BtmStk
+    字符串匹配:BtmScp
 
 字符串
     传入字符串:BtmStrPush
