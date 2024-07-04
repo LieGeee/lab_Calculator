@@ -94,18 +94,23 @@ public class btm extends JFrame {
         } else if (command.equals("÷")) {
             command = "/";
         } else if (command.equals("Π")) {
-            command = "3.141";
+            command = "Π";
         } else if (command.equals("del")) {
             if (BtmStr.length() > 0) {
                 BtmStr = BtmStr.substring(0, BtmStr.length() - 1);
             }
         } else if (command.equals("=")) {
             Bottom_stack_push a = new Bottom_stack_push();
-            a.extract(BtmStr);          //把 字符串传入
-            k=fucc;
 
 
-            if(!BtmScp.isBalanced(BtmStr))   k=kuohao;
+            if(BtmScp.isBalanced(BtmStr))  {
+                a.extract(BtmStr);          //把 字符串传入
+                k=fucc;
+
+            }else{
+                k=kuohao;
+            }
+
 
             //System.out.println("括号匹配为"+BtmScp.isBalanced(BtmStr)+k);
 

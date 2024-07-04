@@ -10,15 +10,7 @@ public class Bottom_stack_push {
     public Stack<String> BtmStk = new Stack<>();
     public static String Ans="";
 
-/*
-    public String getBtmStr() {
-        return BtmStr;
-    }
-*/
 
-  /*  public void setBtmStr(String BtmStr) {
-        this.BtmStr = BtmStr;
-    }*/
 
     public void pushStr(String BtmStrPush,btm a) {
         BtmStrPush=a.getBtmStrPush();
@@ -65,7 +57,10 @@ public class Bottom_stack_push {
               if(s2[j]==null)
                   s2[j]="";
               s2[j]+=s.charAt(i);
-              j+=1;
+                 if(s.charAt(i)=='-'&&s.charAt(i-1)=='(') {
+                     j -= 1;
+                 }
+                     j+=1;
               continue;
           }else if(s.charAt(i)=='s'||s.charAt(i)=='c'||s.charAt(i)=='t')
           {
@@ -122,6 +117,7 @@ public class Bottom_stack_push {
 
     public void infix_suffix (String[] s1,int size)
     {
+        int j=0;
         int index=0;
         String[]s2=new String[1000];
         Stack<String> st = new Stack<String>();
@@ -134,7 +130,7 @@ public class Bottom_stack_push {
         for(int i=0;i<=size;i++)
         {
             if(s1[i].equals("(")) {
-
+                j++;
                 st.push(s1[i]);
             }
             else if(s1[i].equals(")"))
@@ -195,11 +191,11 @@ public class Bottom_stack_push {
             s2[index++]=st.peek();
             st.pop();
         }
-//        for(int i=0;i<index;i++)
-//        {
-//            System.out.printf(s2[i]+" ");
-//        }
-        this.calculat(s2,size);
+       for(int i=0;i<index;i++)
+       {
+            System.out.printf(s2[i]+" ");
+        }System.out.printf(size+" ");
+        this.calculat(s2,size-2*j);
     }
     public void calculat(String []s1,int size)
     {
@@ -207,12 +203,18 @@ public class Bottom_stack_push {
         double ans=0;
         for(int i=0;i<=size;i++)
         {
-            if(this.cmp(s1[i])==0)st.push(s1[i]);
+            if(this.cmp(s1[i])==0) {
+                if(s1[i].equals("Π"))st.push("3.1415926");
+               else  st.push(s1[i]);
+            }
+
             if(this.cmp(s1[i])==1||this.cmp(s1[i])==2)
             {
                 String str2= st.pop();
                 String str1= st.pop();
-               st.push( String.format("%.6f", this.Compute(Double.parseDouble(str1),Double.parseDouble(str2),s1[i]))) ;
+                double d1= Double.parseDouble(str1);
+                //if()
+               st.push( String.format("%.6f", this.Compute(d1,Double.parseDouble(str2),s1[i]))) ;
             }
             if(this.cmp(s1[i])==3)
             {
@@ -245,7 +247,7 @@ public class Bottom_stack_push {
         int ans=1;
         for(int i=n;i>0;i--)
         {
-            ans*=n;
+            ans*=i;
         }
         return ans;
     }
