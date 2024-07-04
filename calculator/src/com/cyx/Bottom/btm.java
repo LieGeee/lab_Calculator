@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+import com.cyx.Bottom.BtmScp;
 import static com.cyx.Bottom.Bottom_stack_push.BtmStr;
 
 public class btm extends JFrame {
@@ -21,6 +21,7 @@ public class btm extends JFrame {
     public static int timee=1;
     public static int datee=2;
     public static int fucc=3;
+    public static int kuohao=4;
 
     public btm() {
         // 初始化JTextArea并添加到窗口
@@ -91,6 +92,8 @@ public class btm extends JFrame {
             command = "*";
         } else if (command.equals("÷")) {
             command = "/";
+        } else if (command.equals("Π")) {
+            command = "3.141592653589793";
         } else if (command.equals("del")) {
             if (BtmStr.length() > 0) {
                 BtmStr = BtmStr.substring(0, BtmStr.length() - 1);
@@ -98,19 +101,27 @@ public class btm extends JFrame {
         } else if (command.equals("=")) {
             Bottom_stack_push a = new Bottom_stack_push();
             a.extract(BtmStr);          //把 字符串传入
-            BtmStr = "";
             k=fucc;
-        } else if (command.equals("AC") ||command.equals("C")) {
+
+
+            if(!BtmScp.isBalanced(BtmStr))   k=kuohao;
+
+            //System.out.println("括号匹配为"+BtmScp.isBalanced(BtmStr)+k);
+
+            BtmStr = "";
+
+        } else if (command.equals("AC") ||command.equals("C") ) {
             BtmStr = "";
             k=fucc;
         }
 
         Bottom_stack_push a = new Bottom_stack_push();
-       if(k!=fucc) {
+       if(k<3) {
            btm w = new btm();
            w.BtmStrPush = command;
 
            a.pushStr(BtmStr, w);
+
            // System.out.println(BtmStr);
        }
         switch (k){
@@ -125,6 +136,9 @@ public class btm extends JFrame {
             tf.append(dateFormat1.format(date) + "\n");
             BtmStr = "";
             tf.setText(dateFormat1.format(date) + "\n");
+            break;
+            case 4: tf.append("括号不匹配,请检查括号"+"\n");
+                tf.setText("括号不匹配,请检查括号"+"\n");
             break;
         }
         k=0;
