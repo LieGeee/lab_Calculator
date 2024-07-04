@@ -6,14 +6,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import static com.cyx.Bottom.Bottom_stack_push.Ans;
 import com.cyx.Bottom.BtmScp;
 import static com.cyx.Bottom.Bottom_stack_push.BtmStr;
 
 public class btm extends JFrame {
     private String BtmStrPush;
     private JTextArea tf; // 定义JTextArea为类的成员变量
-    public int Bottom_Firx = 58;
-    public int Bottom_Firy = 325;
+    public int Bottom_Firx = 50;
+    public int Bottom_Firy = 305;
     public int Bottom_Movex = 152;
     public int Bottom_Movey = 107;
     public int Bottom_Width = 120;
@@ -93,7 +94,7 @@ public class btm extends JFrame {
         } else if (command.equals("÷")) {
             command = "/";
         } else if (command.equals("Π")) {
-            command = "3.141592653589793";
+            command = "3.141";
         } else if (command.equals("del")) {
             if (BtmStr.length() > 0) {
                 BtmStr = BtmStr.substring(0, BtmStr.length() - 1);
@@ -122,10 +123,11 @@ public class btm extends JFrame {
 
            a.pushStr(BtmStr, w);
 
-           // System.out.println(BtmStr);
+            System.out.println(BtmStr);
        }
         switch (k){
-            case 0: case 3:tf.setText(BtmStr);
+            case 0:
+                tf.setText(BtmStr);
             break;
             case 1:  SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
                 tf.append(dateFormat.format(date) + "\n");
@@ -137,6 +139,9 @@ public class btm extends JFrame {
             BtmStr = "";
             tf.setText(dateFormat1.format(date) + "\n");
             break;
+            case 3:tf.append(Ans+"\n");
+                tf.setText(Ans);
+                break;
             case 4: tf.append("括号不匹配,请检查括号"+"\n");
                 tf.setText("括号不匹配,请检查括号"+"\n");
             break;
@@ -149,17 +154,26 @@ public class btm extends JFrame {
     public static void main(String[] args) {
         btm frame = new btm();
         frame.setTitle("Calculator");
-        //frame.setSize(1000, 800);
-        frame.setBounds(50,50,980,1010);
+        frame.setBounds(50, 50, 980, 1010);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
 
-        ImageIcon image=new ImageIcon("S:\\lab_school\\calculator\\image\\BJ.jpg");
-        JLabel label=new JLabel(image);
-        label.setBounds(-8,-15,980,1010);
+        JLayeredPane layeredPane = frame.getLayeredPane();
+
+        // 添加背景图片到layeredPane的最底层
+        ImageIcon image = new ImageIcon("D:\\lab_school\\lab_Calculator\\calculator\\image\\11.png");
+        JLabel label = new JLabel(image);
+        label.setBounds(-14, -33, 980, 1010);
+        layeredPane.add(label, JLayeredPane.DEFAULT_LAYER);
+
+        // 创建按钮并添加到layeredPane的上层
         JButton[] buttons = frame.MakeButton();
         for (JButton button : buttons) {
-            frame.add(button); // 确保所有按钮添加到JFrame
+            layeredPane.add(button, JLayeredPane.PALETTE_LAYER); // 确保按钮添加到上层
         }
+
+        frame.setResizable(false);
+        frame.setVisible(true);
     }
 }
+
+

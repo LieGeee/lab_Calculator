@@ -8,6 +8,7 @@ public class Bottom_stack_push {
     public static String BtmStr = "";
     public static int PosPushStr=0;
     public Stack<String> BtmStk = new Stack<>();
+    public static String Ans="";
 
 /*
     public String getBtmStr() {
@@ -107,9 +108,7 @@ public class Bottom_stack_push {
             {
                 if(this.cmp(s1[i+1])==1||this.cmp(s1[i+1])==2)
                 {
-
                     return false;
-
                 }
             }
             else if(this.cmp(s1[i])==3)
@@ -200,41 +199,54 @@ public class Bottom_stack_push {
 //        {
 //            System.out.printf(s2[i]+" ");
 //        }
+        this.calculat(s2,size);
     }
-
-
-
-    public int CkBks(String s) {
-        s=BtmStr;
-        if (s == null) {
-            return 0;
-        }
-
-        Stack<Integer> stack = new Stack<Integer>();
-        int maxLen = 0;
-        int accumulatedLen = 0;
-
-        for(int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '(') {
-                stack.push(i);
-            } else {
-                if (stack.isEmpty()) {   //如果栈为空，没有左括号可以匹配                                                                                                        ;;
-                    accumulatedLen = 0;
-                } else {
-                    int matchedPos = stack.pop(); //从最近的'('作为起点
-                    int matchedLen = i - matchedPos + 1;	//计算两括号间的长度                                                                                       ;;
-
-                    if (stack.isEmpty()) {			//如果栈为空，没有左括号可以匹配
-                        accumulatedLen += matchedLen;
-                        matchedLen = accumulatedLen;	//更新当前匹配括号序列长度                                                                                             ;
-                    } else {
-                        matchedLen = i - stack.peek();
-                    }
-                    maxLen = Math.max(maxLen, matchedLen);
-                }
+    public void calculat(String []s1,int size)
+    {
+        Stack<String> st = new Stack<String>();
+        double ans=0;
+        for(int i=0;i<=size;i++)
+        {
+            if(this.cmp(s1[i])==0)st.push(s1[i]);
+            if(this.cmp(s1[i])==1||this.cmp(s1[i])==2)
+            {
+                String str2= st.pop();
+                String str1= st.pop();
+               st.push( String.format("%.6f", this.Compute(Double.parseDouble(str1),Double.parseDouble(str2),s1[i]))) ;
+            }
+            if(this.cmp(s1[i])==3)
+            {
+                String str2= st.pop();
+                st.push( String.format("%.6f", this.Compute(1,Double.parseDouble(str2),s1[i]))) ;
             }
         }
-        return maxLen;
-}
-
+        System.out.println(st.peek());
+        Ans=st.peek();
+    }
+    public double Compute(double d1,double d2,String s1)
+    {
+        return switch (s1) {
+            case "+" -> d1 + d2;
+            case "-" -> d1 - d2;
+            case "*" -> d1 * d2;
+            case "/" -> d1 / d2;
+            case "sin"->Math.sin(d2);
+            case "cos"->Math.cos(d2);
+            case "tan"->Math.tan(d2);
+            case "csc"->1/Math.sin(d2);
+            case "cot"->1/Math.tan(d2);
+            case "sec"->1/Math.cos(d2);
+            case "!"->this.jc((int)d2);
+            default -> 1;
+        };
+    }
+    public int jc(int n)
+    {
+        int ans=1;
+        for(int i=n;i>0;i--)
+        {
+            ans*=n;
+        }
+        return ans;
+    }
 }
